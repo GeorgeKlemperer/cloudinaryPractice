@@ -27,7 +27,7 @@ fetch(cloudinaryUploadURL, {
   .then((data) => {
     // console.log("Image uploaded to Cloudinary:", data);
     console.log(data.url);
-    // You can use the data returned by Cloudinary as needed, e.g., to display the image.
+    // You can use the data returned by Cloudinary as needed, e.g., to display the image or get the URL to pass on to DynamoDB.
   })
   .catch((error) => {
     console.error("Error uploading image to Cloudinary:", error);
